@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="Arbiter" class="com.ddss.elements.DataArbiter">
+		<constructor-arg type="java.lang.Integer" value="3"/>
+		<property name = "computingSystemList">
+			<list>
+				<ref bean="ComputingSystemOne"/>
+				<ref bean="ComputingSystemTwo"/>
+				<ref bean="ComputingSystemThree"/>
+			</list>
+		</property>
+		
+
+	</bean>
+
+	<bean id="ComputingSystemOne" class="com.ddss.elements.ComputingSystem" >
+		<constructor-arg type="java.lang.String" value="PC01"/>
+	</bean>
+	<bean id="ComputingSystemTwo" class="com.ddss.elements.ComputingSystem" >
+		<constructor-arg type="java.lang.String" value="PC02"/>
+	</bean>
+	<bean id="ComputingSystemThree" class="com.ddss.elements.ComputingSystem" >
+		<constructor-arg type="java.lang.String" value="PC03"/>
+	</bean>
+	
+	<bean id="FileHandler" class="com.ddss.elements.FileHandler">
+		<constructor-arg type="java.lang.String" value="src/res/GunOffenders.json"/>
+	</bean>
+
+</beans>
