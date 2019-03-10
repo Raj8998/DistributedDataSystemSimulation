@@ -16,8 +16,17 @@ Each interface is implemented by only one class. I will visually represent the c
 The design was created in such manner that we can easily replace, for example, FileHandler that handles JSON format with some handler that handles CSV or XML files. All we are required to do is implement the interface that governs the communication between file handler and data arbiter.
 Additionally, Spring was used to inject the specifics of the code such as the number of available computing systems or the file that should be handled by the file handler.
 
-## Getting Started
-Getting started,prerequisites, tests and additional info will be provided soon...
+## Prerequisites 
+```
+json-simple-1.1.1
+```
+```
+spring-framework-5.1.5.
+```
+
+```
+Standard Java Libraries
+```
 
 ## Authors
 
