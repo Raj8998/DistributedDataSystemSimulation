@@ -53,8 +53,8 @@ public class FileHandler implements FileHandlerEssentials {
 			JSONArray array = (JSONArray)totalDataInput.get("data");
 			
 			int zipcodeIndex = 8;
-			int nameIndex = 11;
-			int surnameIndex = 12;
+			int nameIndex = 12;
+			int surnameIndex = 11;
 			for(int each=0; each<array.size(); each++) {
 				JSONArray personData = (JSONArray)array.get(each);
 				String name = (String)personData.get(nameIndex);
