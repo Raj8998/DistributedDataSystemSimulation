@@ -7,6 +7,7 @@
 Components created to design this data distribution model are fairly simple. Let us first visualise and discuss the interfaces that govern the communication process between the components.
 * FileHandlerEssentials -> (DataInstance) -> Receiver -> Distributer -> Consumer
 * On the very top of the pipeline  is "FileHandlerEssentials" interface which ensures that the data being forwarded along the pipeline implements "DataInstance" interface. This data instance is then forwarded to the "Receiver". In my solution, the "Receiver" is simultaneously the "Distributer" as well, but that doesn't have to be the general case. Distributer has a line of communication with all "Consumers" and passes the data down the pipeline.  Consumers are able to receive the data and manipulate it accordingly to their specifications. 
+![](/Visuals/DistributedDataSystemSimulation_Visuals.png)
 ## Components (Classes)
 Each interface is implemented by only one class. I will visually represent the classes in the same manner as the interfaces, since they correspond to one another.
 * [Interfaces] FileHandlerEssentials -> (DataInstance) -> Receiver -> Distributer -> Consumer
