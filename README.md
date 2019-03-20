@@ -3,6 +3,7 @@
 * The goal of this project was to get some hands-on experience with **Spring Beans and Dependency Injection** concept. Also, one of the focus areas was implementing **S.O.L.I.D. Programming Principles** in the design.
 * The idea behind this project is a primitve solution to the issue that arises when a certain dataset is too large to be processed on a single computing  system and has to be distributed and processed over multiple systems. In my project, I am proposing a solution for the issue of checking for duplicates in such dataset. 
 * The solution is based on the idea of hashing each data instance and assigning it to a particular computing system. If the hash function is properly constructed, we will always assign the same values to the same computing system and therefore we can reckognize the duplicates. We can also be sure that the duplicate wasn't assigned to some other computing system, other than the one containing the initial value. 
+![](/Visuals/DistributedDataSystemSimulation_Visuals_InColor.png)
 ## Components (Interfaces)
 Components created to design this data distribution model are fairly simple. Let us first visualise and discuss the interfaces that govern the communication process between the components.
 * FileHandlerEssentials -> (DataInstance) -> Receiver -> Distributer -> Consumer
